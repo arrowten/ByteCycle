@@ -23,6 +23,8 @@ public:
     void get_flag(std::uint8_t bit);
     void set_flag(std::uint8_t bit);
     void clear_flag(std::uint8_t bit);
+
+    void update_zn_flags(std::uint8_t result);
     
     CPU() {
         registers.fill(0);
