@@ -1,6 +1,9 @@
 #pragma once
+#include <vector>
 #include <array>
+#include <memory>
 #include <cstdint>
+#include <print>
 
 class CPU {
 public:
