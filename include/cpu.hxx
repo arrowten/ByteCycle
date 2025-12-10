@@ -19,6 +19,10 @@ public:
     static constexpr std::uint8_t FLAG_C = 0b0000'0010; // Carry Flag
     static constexpr std::uint8_t FLAG_N = 0b0000'0100; // Negative Flag
     static constexpr std::uint8_t FLAG_Y = 0b0000'1000; // Custom Flag (?)
+
+    void get_flag(std::uint8_t bit);
+    void set_flag(std::uint8_t bit);
+    void clear_flag(std::uint8_t bit);
     
     CPU() {
         registers.fill(0);
